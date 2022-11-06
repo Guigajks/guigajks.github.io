@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hawk Trading</title>
+  </head>
+  <body>
+    <main>
+      <section intro id="us">
+        <div harbor>
+          <img
+            sizes="(max-width: 3300px) 60vw, 1980px"
+            srcset="
+              img/harbor_lw5vjp_ar_16_9,c_fill,g_auto__c_scale,w_368.jpg   368w,
+              img/harbor_lw5vjp_ar_16_9,c_fill,g_auto__c_scale,w_1069.jpg 1069w,
+              img/harbor_lw5vjp_ar_16_9,c_fill,g_auto__c_scale,w_1470.jpg 1470w,
+              img/harbor_lw5vjp_ar_16_9,c_fill,g_auto__c_scale,w_1871.jpg 1871w,
+              img/harbor_lw5vjp_ar_16_9,c_fill,g_auto__c_scale,w_1980.jpg 1980w
+            "
+            src="img/harbor_lw5vjp_ar_16_9,c_fill,g_auto__c_scale,w_1980.jpg"
+            alt=""
+          />
+
+          <header>
+            <a href="#us">
+              <img src="img/hawk trading.jpg" alt="company logo" logo />
+            </a>
+
+            <nav>
+              <ul>
+                <li>
+                  <a href="#servicos">O que fazemos</a>
+                </li>
+                <li>
+                  <a href="#contato">Fale conosco</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+
+          <div what>
+            <h1 title>
+              Assessoria em importação/exportação <br />
+              e terceirização administrativa financeira
+            </h1>
+            <h3 title>
+              <small>
+                Importação direta ou Importação por Conta e Origem
+              </small>
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section services id="servicos">
+        <div service>
+          <h2 service-title>Importação e exportação</h2>
+          <dl>
+            <dt><b>Direta</b></dt>
+            <dd>
+              Auxiliamos sua empresa em todos os trâmites necessários e
+              intermediamos a negociação garantindo segurança em todo o processo
+              aduaneiro.
+            </dd>
+            <dt><b>Por conta e ordem</b></dt>
+            <dd>
+              Realizamos todo o processo aduaneiro de acordo com o que
+              solicitar.
+            </dd>
+          </dl>
+        </div>
+
+        <div service>
+          <h2 service-title>Terceirização administrativa financeira</h2>
+          <p>
+            Disponibilizamos apoio administrativo, financeiro e contábil para
+            sua empresa. Foque no necessário para alavancar o seu negócio
+          </p>
+        </div>
+      </section>
+
+      <footer contact id="contato">
+        <h2 contact-us>Fale Conosco</h2>
+
+        <form name="contactInfo" action="javascript:openEmailClient()">
+          <label for="nome"
+            >Nome <input id="nome" type="text" name="nome" required
+          /></label>
+          <label for="email"
+            >E-mail <input id="email" type="text" name="email" required
+          /></label>
+          <label for="assunto"
+            >Assunto <input id="assunto" type="text" name="assunto" required
+          /></label>
+          <label for="descricao">
+            Descrição
+            <textarea
+              id="descricao"
+              name="descricao"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </label>
+          <button>Enviar</button>
+        </form>
+      </footer>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
