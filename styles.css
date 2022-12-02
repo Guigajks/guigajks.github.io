@@ -71,7 +71,7 @@ section {
 }
 
 section[intro] {
-    --logo-size: 96px;
+    --logo-size: 128px;
     position: relative;
     height: auto;
 }
@@ -118,7 +118,6 @@ nav ul {
     list-style: none;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 1rem;
 }
@@ -180,6 +179,10 @@ section[services] {
 
 div[service] {
     padding: 1rem;
+}
+
+div[service] p, div[service] dd  {
+    line-height: 1.6;
 }
 
 h2[service-title] {
