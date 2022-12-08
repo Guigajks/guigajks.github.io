@@ -118,6 +118,7 @@ nav ul {
     list-style: none;
     height: 100%;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     gap: 1rem;
 }
@@ -143,7 +144,7 @@ section[intro] div[what] {
 
 img[logo] {
     position: relative;
-    width: var(--logo-size);
+    width: calc(var(--logo-size) * 1.75);
     height: var(--logo-size);
     object-fit: contain;
 }
