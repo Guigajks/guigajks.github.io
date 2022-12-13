@@ -1,260 +1,338 @@
 :root {
-    --white: hsl(0, 0%, 100%);
-    --black: hsl(0, 0%, 11%);
-    --blue: hsl(230, 10%, 11%);
-    --blue-light: hsla(240, 86%, 46%, 0.801);
-    --yellow: hsl(30, 63%, 54%);
-    --overlay-default: hsla(207, 87%, 5%, 0.6);
-    --bg-default: var(--white);
-    --text-default: var(--black);
-    --text-secondary: var(--white);
-    --primary: var(--yellow);
-    min-height: 0vh;
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 11%);
+  --blue: hsl(230, 10%, 11%);
+  --blue-light: hsla(240, 86%, 46%, 0.801);
+  --yellow: hsl(30, 63%, 54%);
+  --overlay-default: hsla(207, 87%, 5%, 0.6);
+  --bg-default: var(--white);
+  --text-default: var(--black);
+  --text-secondary: var(--white);
+  --primary: var(--yellow);
+  min-height: 0vh;
 }
 
-*, *::after, *::before {
-    box-sizing: border-box;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-html, body {
-    font-family: 'Inter', sans-serif;
-    padding: 0;
-    margin: 0;
-    line-height: 1.6;
-    color: var(--black);
+html,
+body {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+  color: var(--black);
 }
 
-h1,h2,h3,h4,h5,h6 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 p {
-    margin: 0;
-    line-height: 1.2;
+  margin: 0;
+  line-height: 1.2;
 }
 
 a {
-    text-decoration: none;
-    color: var(--text-default);
-    overflow: hidden;
+  text-decoration: none;
+  color: var(--text-default);
+  overflow: hidden;
 }
 
 a:hover {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 body {
-    width: 100vw;
-    overflow-x: hidden;
-    min-height: 100vh;
-    background-color: var(--bg-default);
+  width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-color: var(--bg-default);
 }
 
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 img[icon] {
-    width: auto;
+  width: auto;
 }
 
 section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 section[intro] {
-    --logo-size: 128px;
-    position: relative;
-    height: auto;
+  --logo-size: 128px;
+  position: relative;
+  height: auto;
 }
 
 section[intro] div[harbor] {
-    position: relative;
-    width: inherit;
-    max-height: 100vh;
-    min-height: 400px;
-    display: flex;
-    justify-content: center;
+  position: relative;
+  width: inherit;
+  max-height: 100vh;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
 }
 
 section[intro] div[harbor]::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--overlay-default);
-    z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-default);
+  z-index: 0;
 }
 
 section[intro] header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: var(--logo-size);
-    background-color: var(--bg-default);
-    z-index: 10;
-    padding-inline: 1.5rem;
-    display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--logo-size);
+  background-color: var(--bg-default);
+  z-index: 10;
+  padding-inline: 1.5rem;
+  display: flex;
 }
 
 nav {
-    flex: 1 1 0;
+  flex: 1 1 0;
+}
+
+nav button {
+  all: unset;
+  display: none;
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
 }
 
 ul li {
-    font-size: 1.125rem;
-    text-align: center;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
+  font-size: 1.125rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: flex-basis 250ms ease-in-out;
+  }
+
+  nav[open="true"] {
+    flex-basis: 300%;
+  }
+
+  nav button {
+    display: inline-block;
+    width: 1.75rem;
+    height: 0.25rem;
+    background-color: var(--text-default);
+    position: relative;
+    margin-left: 2rem;
+  }
+
+  nav[open="true"] button {
+    background-color: transparent;
+  }
+
+  nav button::before,
+  nav button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--text-default);
+  }
+
+  nav button::before {
+    top: -150%;
+  }
+
+  nav[open="true"] button::before {
+    top: 0;
+    transform: rotate(45deg);
+    transform-origin: center;
+  }
+
+  nav button::after {
+    bottom: -150%;
+  }
+
+  nav[open="true"] button::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transform-origin: center;
+  }
+
+  nav ul {
+    transition: width 250ms ease-in-out;
+  }
+
+  nav ul[open="false"] {
+    width: 0;
+  }
+
+  nav ul[open="true"] {
+    width: 100%;
+  }
 }
 
 section[intro] div[what] {
-    position: absolute;
-    top: var(--logo-size);
-    height: calc(100% - var(--logo-size));
-    color: var(--text-secondary);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+  position: absolute;
+  top: var(--logo-size);
+  height: calc(100% - var(--logo-size));
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
 
 img[logo] {
-    position: relative;
-    width: calc(var(--logo-size) * 1.75);
-    height: var(--logo-size);
-    object-fit: contain;
+  position: relative;
+  width: calc(var(--logo-size) * 1.75);
+  height: var(--logo-size);
+  object-fit: contain;
 }
 
 h1[title] {
-    font-size: clamp(1.75rem, calc(1.75rem + ((1vw - 0.23rem) * 2.2333)), 4rem);
-    text-align: center;
-    line-height: 1.2;
-    padding: 0 1rem;
+  font-size: clamp(1.75rem, calc(1.75rem + ((1vw - 0.23rem) * 2.2333)), 4rem);
+  text-align: center;
+  line-height: 1.2;
+  padding: 0 1rem;
 }
 
 h3[title] {
-    font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.23rem) * 0.4963)), 2rem);
-    text-align: center;
-    line-height: 1;
-    padding: 0 1rem;
+  font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.23rem) * 0.4963)), 2rem);
+  text-align: center;
+  line-height: 1;
+  padding: 0 1rem;
 }
 
 section[services] {
-    display: grid;
-    justify-content: center;
-    gap: 1rem;
-    height: auto;
-    padding-block: max(3rem, 12%);
-    padding-inline: 2rem;
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  height: auto;
+  padding-block: max(3rem, 12%);
+  padding-inline: 2rem;
 }
 
 @media screen and (min-width: 992px) {
-    section[services] {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  section[services] {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 div[service] {
-    padding: 1rem;
+  padding: 1rem;
 }
 
-div[service] p, div[service] dd  {
-    line-height: 1.6;
+div[service] p,
+div[service] dd {
+  line-height: 1.6;
 }
 
 h2[service-title] {
-    font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.23rem) * 1.4888)), 3rem);
-    line-height: 1.2;
+  font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.23rem) * 1.4888)), 3rem);
+  line-height: 1.2;
 }
 
 dd {
-    margin: 0;
-    margin-bottom: 1rem;
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 img[footer-logo] {
-    --logo-size: 150px;
-    width: var(--logo-size);
-    height: var(--logo-size);
-    object-fit: contain;
+  --logo-size: 150px;
+  width: var(--logo-size);
+  height: var(--logo-size);
+  object-fit: contain;
 }
 
 footer[contact] {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding: 3.5rem;
-    background-color: var(--blue);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 3.5rem;
+  background-color: var(--blue);
 }
 
 h2[contact-us] {
-    position: absolute;
-    top: 1rem;
-    left: 3.5rem;
-    color: var(--text-secondary);
+  position: absolute;
+  top: 1rem;
+  left: 3.5rem;
+  color: var(--text-secondary);
 }
 
-
 form {
-    width: max(330px, 50%);
-    display: flex;
-    flex-direction: column;
+  width: max(330px, 50%);
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-    display: block;
-    color: var(--text-secondary);
-    margin-bottom: 0.75rem;
+  display: block;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
 }
 
-input, textarea {
-    display: block;
-    width: 100%;
-    resize: none;
-    background-color: hsl(244deg 12% 18% / 66%);
-    border: 1px solid var(--bg-default);
-    border: none;
-    color: var(--text-secondary);
-    padding: 0.5rem;
+input,
+textarea {
+  display: block;
+  width: 100%;
+  resize: none;
+  background-color: hsl(244deg 12% 18% / 66%);
+  border: 1px solid var(--bg-default);
+  border: none;
+  color: var(--text-secondary);
+  padding: 0.5rem;
 }
 
 input {
-    height: 2rem;
+  height: 2rem;
 }
 
 button {
-    background-color: var(--primary);
-    color: var(--text-secondary);
-    padding: 1rem;
+  background-color: var(--primary);
+  color: var(--text-secondary);
+  padding: 1rem;
 }
 
 button:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
-
-
-
