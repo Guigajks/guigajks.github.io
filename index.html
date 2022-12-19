@@ -94,28 +94,12 @@
 
       <footer contact id="contato">
         <h2 contact-us>Fale Conosco</h2>
+        <p>
+          <a text-light onclick="copyToClipboard()" id="contact-email">
+            contato@hawktrading.com.br
+          </a>
+        </p>
 
-        <form name="contactInfo" action="javascript:openEmailClient()">
-          <label for="nome"
-            >Nome <input id="nome" type="text" name="nome" required
-          /></label>
-          <label for="email"
-            >E-mail <input id="email" type="text" name="email" required
-          /></label>
-          <label for="assunto"
-            >Assunto <input id="assunto" type="text" name="assunto" required
-          /></label>
-          <label for="descricao">
-            Descrição
-            <textarea
-              id="descricao"
-              name="descricao"
-              cols="30"
-              rows="10"
-              required
-            ></textarea>
-          </label>
-          <button>Enviar</button>
         </form>
       </footer>
     </main>
