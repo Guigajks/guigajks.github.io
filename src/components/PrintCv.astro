@@ -1,0 +1,116 @@
+---
+import { cv, t, type Locale } from "../data/cv";
+import { labels } from "../i18n/ui";
+import PrintLayout from "../layouts/PrintLayout.astro";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const l = labels(locale);
+---
+
+<PrintLayout locale={locale} title={`${cv.name} — CV (${locale.toUpperCase()})`}>
+  <article class="print-page">
+    <header class="print-header">
+      <div>
+        <h1>{cv.name}</h1>
+        <p class="print-role">{t(cv.role, locale)}</p>
+      </div>
+      <div class="print-contact">
+        <div>{cv.contact.address}</div>
+        <div>{cv.contact.city}</div>
+        <div>{t(cv.contact.country, locale)}</div>
+        <div>
+          <a href={cv.contact.phoneHref}>{cv.contact.phone}</a>
+        </div>
+        <div>
+          <a href={`mailto:${cv.contact.email}`}>{cv.contact.email}</a>
+        </div>
+        <div>
+          <a href={cv.contact.linkedin}>LinkedIn</a>
+        </div>
+      </div>
+    </header>
+
+    <p class="print-summary">{t(cv.summary, locale)}</p>
+
+    <section class="print-section">
+      <h2>{l.employment}</h2>
+      {
+        cv.jobs.map((job) => (
+          <div class="print-job">
+            <h3>
+              {t(job.role, locale)}, {job.company}, {job.location}
+            </h3>
+            <p class="print-meta">{t(job.period, locale)}</p>
+            {job.bullets.map((bullet) => (
+              <p>{t(bullet, locale)}</p>
+            ))}
+            <ul class="print-stack">
+              {job.stack.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </section>
+
+    <section class="print-section print-section--keep">
+      <h2>{l.education}</h2>
+      <div class="print-job">
+        <h3>{t(cv.education.degree, locale)}</h3>
+        <p class="print-meta">{t(cv.education.period, locale)}</p>
+        <p>{t(cv.education.description, locale)}</p>
+      </div>
+    </section>
+
+    <section class="print-section print-section--keep">
+      <h2>{l.certifications}</h2>
+      {
+        cv.certifications.map((cert) => (
+          <div class="print-job">
+            <h3>{t(cert.name, locale)}</h3>
+            <p class="print-meta">
+              {t(cert.credential, locale)} · {t(cert.issuer, locale)} · {t(cert.date, locale)}
+            </p>
+            <p>{t(cert.description, locale)}</p>
+            <p>
+              {l.credentialId}: {cert.credentialId}
+            </p>
+            <p>
+              <a href={cert.url}>{cert.url}</a>
+            </p>
+          </div>
+        ))
+      }
+    </section>
+
+    <section class="print-section print-section--keep">
+      <h2>{l.skillsInterests}</h2>
+      <div class="print-columns">
+        <div>
+          <h3>{l.skills}</h3>
+          <ul>
+            {cv.skills.soft.map((item) => <li>{t(item, locale)}</li>)}
+            {cv.skills.technical.map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
+        <div>
+          <h3>{l.languages}</h3>
+          <ul>
+            {cv.languages.map((item) => <li>{t(item, locale)}</li>)}
+          </ul>
+        </div>
+        <div>
+          <h3>{l.hobbies}</h3>
+          <ul>
+            {cv.hobbies.map((item) => <li>{t(item, locale)}</li>)}
+          </ul>
+        </div>
+      </div>
+    </section>
+  </article>
+</PrintLayout>

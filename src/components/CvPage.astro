@@ -1,0 +1,37 @@
+---
+import { cv, type Locale } from "../data/cv";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import LangToggle from "./LangToggle.astro";
+import Hero from "./Hero.astro";
+import Experience from "./Experience.astro";
+import Education from "./Education.astro";
+import Certifications from "./Certifications.astro";
+import Contact from "./Contact.astro";
+import Aside from "./Aside.astro";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<BaseLayout locale={locale} title={`${cv.name} — ${cv.role[locale]}`} description={cv.summary[locale]}>
+  <div class="site">
+    <LangToggle locale={locale} />
+    <Hero locale={locale} />
+    <div class="layout">
+      <main>
+        <Experience locale={locale} />
+        <Education locale={locale} />
+        <Certifications locale={locale} />
+        <Contact locale={locale} />
+      </main>
+      <Aside locale={locale} />
+    </div>
+    <footer class="site-footer">
+      <p>© {year} {cv.name}</p>
+    </footer>
+  </div>
+</BaseLayout>

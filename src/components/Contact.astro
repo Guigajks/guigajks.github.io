@@ -1,0 +1,28 @@
+---
+import { cv, type Locale } from "../data/cv";
+import { labels } from "../i18n/ui";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const l = labels(locale);
+---
+
+<section id="contact" class="reveal" data-reveal>
+  <h2 class="section-title">{l.contact}</h2>
+  <ul class="contact-list">
+    <li>
+      <a href={`mailto:${cv.contact.email}`}>{cv.contact.email}</a>
+    </li>
+    <li>
+      <a href={cv.contact.phoneHref}>{cv.contact.phone}</a>
+    </li>
+    <li>
+      <a href={cv.contact.linkedin} target="_blank" rel="noopener noreferrer">
+        {l.linkedinProfile}
+      </a>
+    </li>
+  </ul>
+</section>

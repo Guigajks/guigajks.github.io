@@ -1,0 +1,53 @@
+---
+import { cv, t, type Locale } from "../data/cv";
+import { labels } from "../i18n/ui";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const l = labels(locale);
+---
+
+<section id="certifications" class="reveal" data-reveal>
+  <h2 class="section-title">{l.certifications}</h2>
+  {
+    cv.certifications.map((cert) => (
+      <article class="cert">
+        <a
+          class="cert-preview"
+          href={cert.file}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={cert.image}
+            alt={`${t(cert.name, locale)} — ${t(cert.issuer, locale)}`}
+            width="1683"
+            height="1190"
+            loading="lazy"
+          />
+        </a>
+        <div class="cert-body">
+          <h3 class="edu-place">{t(cert.name, locale)}</h3>
+          <p class="edu-meta">
+            {t(cert.credential, locale)} · {t(cert.issuer, locale)} · {t(cert.date, locale)}
+          </p>
+          <p class="edu-desc">{t(cert.description, locale)}</p>
+          <p class="cert-id">
+            {l.credentialId}: {cert.credentialId}
+          </p>
+          <div class="cert-actions">
+            <a class="btn btn-primary" href={cert.file} target="_blank" rel="noopener noreferrer">
+              {l.viewCertificate}
+            </a>
+            <a class="btn btn-ghost" href={cert.url} target="_blank" rel="noopener noreferrer">
+              {l.verifyCertificate}
+            </a>
+          </div>
+        </div>
+      </article>
+    ))
+  }
+</section>

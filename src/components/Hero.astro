@@ -1,0 +1,40 @@
+---
+import { cv, pdfFilename, t, type Locale } from "../data/cv";
+import { labels } from "../i18n/ui";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const l = labels(locale);
+const pdf = `/${pdfFilename(locale)}`;
+---
+
+<section class="hero" aria-label="Introduction">
+  <div class="hero-copy">
+    <h1>{cv.name}</h1>
+    <p class="hero-role">{t(cv.role, locale)}</p>
+    <p class="hero-lead">{t(cv.summary, locale)}</p>
+    <div class="cta-group">
+      <a class="btn btn-primary" href={pdf} download={pdfFilename(locale)}>
+        {l.downloadCv}
+      </a>
+      <a class="btn btn-ghost" href={`mailto:${cv.contact.email}`}>
+        {l.emailMe}
+      </a>
+      <a
+        class="btn btn-ghost"
+        href={cv.contact.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+    </div>
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <div class="geom-ring"></div>
+    <div class="geom"></div>
+  </div>
+</section>

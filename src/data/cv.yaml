@@ -1,0 +1,240 @@
+name: Luiz Guilherme das Chagas
+role:
+  en: Frontend Engineer
+  pt: Engenheiro Frontend
+summary:
+  en: Frontend Engineer with 8+ years of experience building scalable web applications using Vue.js, TypeScript and modern frontend architectures. Currently developing enterprise solutions for EnBW through Nearshore Portugal, creating reusable Vue 3 components integrated with Contentful CMS. Throughout my career, I have worked on international projects across the energy, telecommunications, recruitment and fintech sectors, delivering maintainable and high-performance frontend solutions. My experience includes Vue.js, Nuxt, TypeScript, SCSS, AngularJS, automated testing and component-driven development. I enjoy solving complex frontend challenges, improving application architecture and creating reusable, accessible and high-quality user interfaces. I am particularly interested in modern frontend engineering, performance optimization and scalable software design.
+  pt: Engenheiro frontend com mais de 8 anos de experiência no desenvolvimento de aplicações web escaláveis com Vue.js, TypeScript e arquiteturas modernas de frontend. Atualmente desenvolve soluções enterprise para a EnBW através da Nearshore Portugal, criando componentes reutilizáveis em Vue 3 integrados ao Contentful CMS. Ao longo da carreira, atuou em projetos internacionais nos setores de energia, telecomunicações, recrutamento e fintech, entregando soluções frontend manuteníveis e de alto desempenho. A experiência inclui Vue.js, Nuxt, TypeScript, SCSS, AngularJS, testes automatizados e desenvolvimento orientado a componentes. Gosta de resolver desafios complexos de frontend, evoluir a arquitetura das aplicações e criar interfaces reutilizáveis, acessíveis e de alta qualidade. Tem especial interesse em engenharia frontend moderna, otimização de performance e design de software escalável.
+contact:
+  address: Lisboa
+  city: Lisboa
+  country:
+    en: Portugal
+    pt: Portugal
+  phone: "+351 915 489 961"
+  phoneHref: "tel:+351915489961"
+  email: luiz.gchagas@outlook.com
+  linkedin: https://www.linkedin.com/in/luiz-guilherme-das-chagas-800958156
+  birthDate: "17/10/1995"
+jobs:
+  - company: Nearshore Portugal
+    location: Lisboa
+    role:
+      en: Frontend developer / Contentful Manager — EnBW
+      pt: Desenvolvedor Frontend / Contentful Manager — EnBW
+    period:
+      en: August 2024 — Present
+      pt: Agosto 2024 — Atual
+    bullets:
+      - en: Develop and maintain reusable Vue 3 components integrated with Contentful CMS, supporting the company's customer-facing web applications.
+        pt: Desenvolve e mantém componentes reutilizáveis em Vue 3 integrados ao Contentful CMS, suportando as aplicações web voltadas ao cliente da empresa.
+      - en: Build scalable and maintainable frontend solutions using Vue 3, TypeScript and SCSS.
+        pt: Constrói soluções frontend escaláveis e manuteníveis com Vue 3, TypeScript e SCSS.
+      - en: Collaborate with designers, backend engineers and product teams to deliver new features and improve existing user experiences.
+        pt: Colabora com designers, engenheiros de backend e equipas de produto para entregar novas funcionalidades e melhorar experiências de utilizador existentes.
+      - en: Contribute to code quality through code reviews, architectural discussions and frontend best practices.
+        pt: Contribui para a qualidade do código através de code reviews, discussões de arquitetura e boas práticas de frontend.
+      - en: Support the evolution of the frontend architecture by improving component reusability, performance and maintainability.
+        pt: Apoia a evolução da arquitetura frontend melhorando a reutilização de componentes, a performance e a manutenibilidade.
+    stack:
+      - Vue 3
+      - TypeScript
+      - SCSS
+      - Contentful CMS
+  - company: Aubay Portugal
+    location: Lisboa
+    role:
+      en: Frontend developer — TLS Contact
+      pt: Desenvolvedor Frontend — TLS Contact
+    period:
+      en: June 2023 — July 2024
+      pt: Junho 2023 — Julho 2024
+    bullets:
+      - en: Contributed to the development of the next generation of the TLScontact platform.
+        pt: Contribuiu para o desenvolvimento da próxima geração da plataforma TLScontact.
+      - en: Worked within a newly designed frontend architecture, applying SOLID principles and modern software engineering practices.
+        pt: Trabalhou numa arquitetura frontend redesenhada, aplicando princípios SOLID e práticas modernas de engenharia de software.
+      - en: Developed scalable and maintainable frontend features while collaborating with cross-functional teams.
+        pt: Desenvolveu funcionalidades frontend escaláveis e manuteníveis em colaboração com equipas multidisciplinares.
+      - en: Participated in architectural discussions and implementation of reusable application components.
+        pt: Participou em discussões de arquitetura e na implementação de componentes reutilizáveis da aplicação.
+    stack:
+      - Vue.js
+      - TypeScript
+      - SOLID
+  - company: Aubay Portugal
+    location: Lisboa
+    role:
+      en: Frontend developer — Celfocus
+      pt: Desenvolvedor Frontend — Celfocus
+    period:
+      en: August 2022 — May 2023
+      pt: Agosto 2022 — Maio 2023
+    bullets:
+      - en: Developed frontend pages for new Vodafone Ireland digital services using Adobe Experience Manager (AEM) and AngularJS.
+        pt: Desenvolveu páginas frontend para novos serviços digitais da Vodafone Ireland com Adobe Experience Manager (AEM) e AngularJS.
+      - en: Worked within a Waterfall delivery model while collaborating with multidisciplinary teams.
+        pt: Trabalhou num modelo de entrega Waterfall em colaboração com equipas multidisciplinares.
+      - en: Maintained and extended a legacy AngularJS codebase, balancing feature delivery with long-term maintainability.
+        pt: Manteve e evoluiu uma codebase legacy em AngularJS, equilibrando entrega de funcionalidades com manutenibilidade a longo prazo.
+      - en: Adapted quickly to enterprise legacy technologies and established development processes.
+        pt: Adaptou-se rapidamente a tecnologias legacy enterprise e a processos de desenvolvimento estabelecidos.
+    stack:
+      - AngularJS
+      - Adobe Experience Manager (AEM)
+  - company: FLOW Executive Finders
+    location: São Paulo
+    role:
+      en: Frontend Web Developer
+      pt: Desenvolvedor Web Frontend
+    period:
+      en: January 2022 — July 2022
+      pt: Janeiro 2022 — Julho 2022
+    bullets:
+      - en: Developed a recruitment platform using Vue 3 (Composition API), TypeScript, SCSS and Jest.
+        pt: Desenvolveu uma plataforma de recrutamento com Vue 3 (Composition API), TypeScript, SCSS e Jest.
+      - en: Implemented new features with a strong focus on component reusability and maintainable architecture.
+        pt: Implementou novas funcionalidades com forte foco em reutilização de componentes e arquitetura sustentável.
+      - en: Collaborated in an Agile environment, participating in planning, code reviews and iterative product delivery.
+        pt: Colaborou num ambiente Agile, participando em planeamento, code reviews e entrega iterativa do produto.
+      - en: Contributed to frontend testing and application reliability through automated unit tests.
+        pt: Contribuiu para testes frontend e fiabilidade da aplicação através de testes unitários automatizados.
+    stack:
+      - Vue 3 (Composition API)
+      - TypeScript
+      - SCSS
+      - Jest
+  - company: Iterative
+    location: São Paulo
+    role:
+      en: Frontend Web Developer
+      pt: Desenvolvedor Web Frontend
+    period:
+      en: June 2021 — January 2022
+      pt: Junho 2021 — Janeiro 2022
+    bullets:
+      - en: Developed new features for the "O Novo Mercado" platform using Vue.js.
+        pt: Desenvolveu novas funcionalidades para a plataforma "O Novo Mercado" com Vue.js.
+      - en: Collaborated with the engineering team to improve development workflows and team productivity.
+        pt: Colaborou com a equipa de engenharia para melhorar workflows de desenvolvimento e produtividade.
+      - en: Participated in feature implementation, bug fixing and continuous platform improvements.
+        pt: Participou na implementação de funcionalidades, correção de bugs e melhorias contínuas da plataforma.
+      - en: Worked closely with product stakeholders to deliver business requirements.
+        pt: Trabalhou em estreita colaboração com stakeholders de produto para entregar requisitos de negócio.
+    stack:
+      - Vue.js
+      - SCSS
+  - company: Risknow.ai
+    location: São Paulo
+    role:
+      en: Junior Software Developer
+      pt: Desenvolvedor de Software Júnior
+    period:
+      en: July 2018 — June 2021
+      pt: Julho 2018 — Junho 2021
+    bullets:
+      - en: Started as a Full Stack Developer building features with Python and React before specializing in Frontend Engineering.
+        pt: Começou como Full Stack Developer a construir funcionalidades com Python e React, antes de se especializar em Frontend Engineering.
+      - en: Developed modern web applications using Vue.js (Nuxt), React (Next.js) and Nx Workspace within a monorepo architecture.
+        pt: Desenvolveu aplicações web modernas com Vue.js (Nuxt), React (Next.js) e Nx Workspace numa arquitetura monorepo.
+      - en: Built reusable frontend components and implemented responsive user interfaces.
+        pt: Construiu componentes frontend reutilizáveis e implementou interfaces responsivas.
+      - en: Automated report generation and internal processes using Python and Apache Airflow.
+        pt: Automatizou a geração de relatórios e processos internos com Python e Apache Airflow.
+      - en: Collaborated across multidisciplinary teams, contributing throughout the software development lifecycle.
+        pt: Colaborou com equipas multidisciplinares, contribuindo ao longo de todo o ciclo de desenvolvimento de software.
+    stack:
+      - Vue.js (Nuxt)
+      - React (Next.js)
+      - TypeScript
+      - Nx
+      - Python
+      - Apache Airflow
+  - company: Agilus Informatica
+    location: São Paulo
+    role:
+      en: Intern
+      pt: Estagiário
+    period:
+      en: October 2016 — July 2018
+      pt: Outubro 2016 — Julho 2018
+    bullets:
+      - en: Supported Microsoft database operations by importing and validating customer datasets using SQL.
+        pt: Apoiou operações de base de dados Microsoft, importando e validando datasets de clientes com SQL.
+      - en: Created reports based on processed data to support business analysis.
+        pt: Criou relatórios com base em dados processados para apoiar a análise de negócio.
+      - en: Worked with relational databases, data validation and SQL scripting.
+        pt: Trabalhou com bases de dados relacionais, validação de dados e scripting SQL.
+      - en: Developed a strong foundation in database management and data processing.
+        pt: Desenvolveu uma base sólida em gestão de bases de dados e processamento de dados.
+    stack:
+      - SQL
+      - Microsoft SQL Server
+education:
+  degree:
+    en: Computer Engineering, Centro Universitário Senac, São Paulo
+    pt: Engenharia de Computação, Centro Universitário Senac, São Paulo
+  period:
+    en: 2015 — 2019
+    pt: 2015 — 2019
+  description:
+    en: Engineer's degree. Learned the fundamentals of hardware, software, electronics, embedded systems, networks and IoT.
+    pt: Licenciatura em Engenharia. Estudo dos fundamentos de hardware, software, eletrónica, sistemas embarcados, redes e IoT.
+certifications:
+  - name:
+      en: Certified Mid-Level Vue.js Developer
+      pt: Desenvolvedor Vue.js Certificado — Nível Intermédio
+    credential:
+      en: Vue.js Developer Level I
+      pt: Vue.js Developer Level I
+    issuer:
+      en: certificates.dev · Vue School
+      pt: certificates.dev · Vue School
+    date:
+      en: August 27, 2026
+      pt: 27 de agosto de 2026
+    description:
+      en: Official Vue.js certification after passing an examination developed with Vue School and members of the Vue.js core team.
+      pt: Certificação oficial Vue.js obtida após exame desenvolvido com a Vue School e membros da equipa core do Vue.js.
+    credentialId: CMVD-009271
+    url: https://certificates.dev/c/a299b2f5-6e7e-43c2-9dc7-e21e0af54588
+    file: /certificates/certificado-vuejs.pdf
+    image: /certificates/vuejs-mid-level.png
+skills:
+  soft:
+    - en: Adaptability
+      pt: Adaptabilidade
+    - en: Ability to Work in a Team
+      pt: Trabalho em equipa
+    - en: Frontend Engineering
+      pt: Engenharia Frontend
+  technical:
+    - Vue.js / Vue 3
+    - TypeScript
+    - Nuxt
+    - React / Next.js
+    - SCSS
+    - AngularJS
+    - Contentful CMS
+    - AEM
+    - Jest
+    - Nx
+    - Python
+    - SQL
+languages:
+  - en: English
+    pt: Inglês
+  - en: Portuguese
+    pt: Português
+hobbies:
+  - en: Yoga
+    pt: Yoga
+  - en: Dance
+    pt: Dança
+  - en: Games
+    pt: Games
+  - en: Reading
+    pt: Leitura
+pdf:
+  en: Luiz_Guilherme_das_Chagas_CV_EN.pdf
+  pt: Luiz_Guilherme_das_Chagas_CV_PT.pdf

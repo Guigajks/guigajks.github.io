@@ -1,0 +1,33 @@
+---
+import { cv, t, type Locale } from "../data/cv";
+import { labels } from "../i18n/ui";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const l = labels(locale);
+---
+
+<section id="experience" class="reveal" data-reveal>
+  <h2 class="section-title">{l.employment}</h2>
+  {
+    cv.jobs.map((job) => (
+      <article class="job">
+        <h3 class="job-title">
+          {t(job.role, locale)}, {job.company}, {job.location}
+        </h3>
+        <p class="job-meta">{t(job.period, locale)}</p>
+        {job.bullets.map((bullet) => (
+          <p>{t(bullet, locale)}</p>
+        ))}
+        <ul class="job-stack">
+          {job.stack.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </article>
+    ))
+  }
+</section>

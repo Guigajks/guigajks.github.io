@@ -1,0 +1,38 @@
+---
+import { cv, t, type Locale } from "../data/cv";
+import { labels } from "../i18n/ui";
+import Skills from "./Skills.astro";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const l = labels(locale);
+---
+
+<aside class="aside reveal" data-reveal>
+  <h2>{l.details}</h2>
+  <div class="aside-block">
+    <p>{cv.contact.address}</p>
+    <p>{cv.contact.city}</p>
+    <p>{t(cv.contact.country, locale)}</p>
+  </div>
+  <div class="aside-block">
+    <p class="label">{l.phone}</p>
+    <a href={cv.contact.phoneHref}>{cv.contact.phone}</a>
+  </div>
+  <div class="aside-block">
+    <p class="label">{l.email}</p>
+    <a href={`mailto:${cv.contact.email}`}>{cv.contact.email}</a>
+  </div>
+  <div class="aside-block">
+    <p class="label">{l.birthDate}</p>
+    <p>{cv.contact.birthDate}</p>
+  </div>
+  <div class="aside-block">
+    <p class="label">{l.links}</p>
+    <a href={cv.contact.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </div>
+  <Skills locale={locale} />
+</aside>

@@ -1,0 +1,19 @@
+---
+import type { Locale } from "../data/cv";
+import { labels } from "../i18n/ui";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const l = labels(locale);
+---
+
+<header class="topbar">
+  <a class="brand-mark" href={`/${locale}`}>{l.brand}</a>
+  <nav class="lang-toggle" aria-label={l.langLabel}>
+    <a href="/en" aria-current={locale === "en" ? "page" : undefined}>EN</a>
+    <a href="/pt" aria-current={locale === "pt" ? "page" : undefined}>PT</a>
+  </nav>
+</header>

@@ -1,0 +1,18 @@
+---
+import { cv, t, type Locale } from "../data/cv";
+import { labels } from "../i18n/ui";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const l = labels(locale);
+---
+
+<section id="education" class="reveal" data-reveal>
+  <h2 class="section-title">{l.education}</h2>
+  <p class="edu-place">{t(cv.education.degree, locale)}</p>
+  <p class="edu-meta">{t(cv.education.period, locale)}</p>
+  <p class="edu-desc">{t(cv.education.description, locale)}</p>
+</section>
