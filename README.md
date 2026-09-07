@@ -38,6 +38,16 @@ Isso faz o build e gera:
 
 Use esses arquivos para anexar em candidaturas. O botão **Download CV / Baixar CV** no site aponta para o PDF do idioma ativo.
 
+## GitHub Pages
+
+O site publica em `https://guigajks.github.io` (repositório de utilizador, sem `base`).
+
+1. Em **Settings → Pages → Build and deployment → Source**, escolha **GitHub Actions**.
+2. Faça push da branch `master`. O workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) faz o build do Astro e publica `dist/`.
+3. O repositório precisa de ser **público** (plano gratuito) ou ter GitHub Pro para site privado.
+
+Rotas: `/` redireciona para `/en`. PDFs e certificados em `public/` entram no deploy no próximo build.
+
 ## Scripts
 
 | Comando | Função |
